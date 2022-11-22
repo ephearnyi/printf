@@ -24,6 +24,10 @@ int _printf(const char *format, ...)
 	 */
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
+		/**
+		 * This test for non-standard specifiers
+		 * example - %d,%i,%f,%s,%c and so on
+		 */
 		if (format[i] != '%')
 		{
 			buffer[buff_ind++] = format[i];
