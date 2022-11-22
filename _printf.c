@@ -19,6 +19,9 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
+	/**
+	 * the print function starts here
+	 */
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
